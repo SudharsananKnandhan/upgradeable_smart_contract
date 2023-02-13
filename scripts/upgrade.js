@@ -3,7 +3,7 @@ async function main() {
    
     const BoxV2 = await ethers.getContractFactory("BoxV2");
     console.log("Preparing upgrade...");
-    const boxV2Address = await upgrades.prepareUpgrade(proxyAddress, BoxV2);
+    const boxV2Address = await upgrades.upgradeProxy(proxyAddress, BoxV2);
     console.log("BoxV2 at:", boxV2Address);
   }
    
