@@ -1,0 +1,38 @@
+node_modules/
+
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.yarn-integrity
+
+pids
+*.pid
+*.seed
+*.pid.lock
+secret.json
+coverage/
+coverage.json
+coverageEnv
+
+# temporary artifact from solidity-coverage
+allFiredEvents
+.coverage_artifacts
+.coverage_cache
+.coverage_contracts
+
+# hardhat
+cache
+.artifacts
+
+# openzeppelin
+.openzeppelin/unknown-*.json
+# polygon network
+!.openzeppelin/unknown-137.json
+# mumbai network
+!.openzeppelin/unknown-80001.json
+
+.sandbox
+.deployer
